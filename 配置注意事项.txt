@@ -1,0 +1,24 @@
+1. conda下载pytorch缓慢，切换源：
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+
+conda config --set show_channel_urls yes
+
+2. 生成SSHkeys：
+ssh-keygen -t rsa -C "xxx@xxx.com"
+一直回车。
+
+3. 清华镜像：
+
+-i https://pypi.tuna.tsinghua.edu.cn/simple
+
+4. else
+
+有时在使用source activate + 所要激活的东西时报出：
+’source’ 不是内部或外部命令，也不是可运行的程序 或批处理文件
+此时可以尝试：
+activate + 所要激活的东西（即删掉source）
