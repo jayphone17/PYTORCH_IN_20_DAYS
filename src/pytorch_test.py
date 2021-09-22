@@ -1,15 +1,10 @@
-# 1.准备数据
-# 2.定义模型
-# 3.训练模型
-# 4.评估模型
-# 5.使用模型
-# 6.保存模型
+import torch
+import cv2
 
-# 数据类型：结构化数据、图片数据，文本数据，时间数列数据。
+print(cv2.__version__)
 
-# Titanic生存预测问题
-# cifar2图片分类问题
-# imdb电影评论分类问题
-# 国内新馆疫情结束时间预测问题
-# 为例子
+x = torch.empty(5, 3)
+print(x)
 
+print("torch version is : {}".format(torch.__version__))
+print("cuda is available : {}".format(torch.cuda.is_available()))
